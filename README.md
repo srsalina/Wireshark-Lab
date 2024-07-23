@@ -38,11 +38,19 @@ Then, I returned to Wireshark and stopped the packet capture after a few seconds
 
 
 7. The next step of my task required me to demonstrate how to filter packets to view traffic only involving a specific address. I chose to only filter for Google.com. I filtered for any traffic involving Google’s IP address in the first screenshot. In the second one, I looked for any packets received from Google itself. Finally, the third screenshot demonstrates how I looked for any packets sent to Google.
-![image](https://github.com/user-attachments/assets/59c1816c-6ad2-40be-8211-51ce77a1be1f)
-![image](https://github.com/user-attachments/assets/572e07d3-0f5e-4dc7-a670-6a9d3f4aa139)
-![image](https://github.com/user-attachments/assets/c499f85a-4985-493d-8b11-1d44203e078a)
+   
+     (1)![image](https://github.com/user-attachments/assets/59c1816c-6ad2-40be-8211-51ce77a1be1f)
+(2)![image](https://github.com/user-attachments/assets/572e07d3-0f5e-4dc7-a670-6a9d3f4aa139)
+(3)![image](https://github.com/user-attachments/assets/c499f85a-4985-493d-8b11-1d44203e078a)
 
-8. 
+9. Then, I demonstrated that I could filter for HTTP packets by writing a filter that only looked for packets from port 80. Doing so allowed me to view the packets sent to/from  http://cygwin.com.
+![image](https://github.com/user-attachments/assets/a766e2ae-f7d1-4fdc-b9d5-b3f99a5ddf61)
+
+10. Next, I used a conditional filter for HTTP and HTTPS packets.
+![image](https://github.com/user-attachments/assets/cf1712b9-7fa0-4e32-8bde-f41b60ff1e9d)
+
+11. Lastly, I used filters to exclude Cygwin packets from the display while displaying any other internet traffic. 
+![image](https://github.com/user-attachments/assets/36a9c05a-a296-4f4b-b680-23977ea02063)
 
 Wireshark uses coloring rules to provide visual cues that help find packets quicker. In this example, the blue packets all contained DNS traffic, and the green packets contained TCP and HTTP/S protocol traffic. 
 
